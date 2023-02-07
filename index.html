@@ -66,9 +66,18 @@
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
-          <button class="btn button-hero" type="button">
+          <button class="button-hero" type="button" data-modal-open>
             Замовити послугу
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" data-modal-close class="modal-btn-close">
+                <svg class="modal-icon">
+                  <use href="./img/icons.svg#btn-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -136,31 +145,46 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="direct-wrap">
             <li class="direct-icon">
-              <img
-                class="img"
-                src="./img/index-img/directions/web-development.jpg"
-                alt="Розробка веб-сайтів"
-                width="370"
-                height="294"
-              />
+              <div class="direction-box">
+                <img
+                  class="img"
+                  src="./img/index-img/directions/web-development.jpg"
+                  alt="Розробка веб-сайтів"
+                  width="370"
+                  height="294"
+                />
+                <div class="direction-layout-text">
+                  <h3 class="direction-text">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="direct-icon">
-              <img
-                class="img"
-                src="./img/index-img/directions/applications.jpg"
-                alt="Розробка додатків"
-                width="370"
-                height="294"
-              />
+              <div class="direction-box">
+                <img
+                  class="img"
+                  src="./img/index-img/directions/applications.jpg"
+                  alt="Розробка додатків"
+                  width="370"
+                  height="294"
+                />
+                <div class="direction-layout-text">
+                  <h3 class="direction-text">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="direct-icon">
-              <img
-                class="img"
-                src="./img/index-img/directions/design.jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
+              <div class="direction-box">
+                <img
+                  class="img"
+                  src="./img/index-img/directions/design.jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+                <div class="direction-layout-text">
+                  <h3 class="direction-text">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -525,5 +549,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
